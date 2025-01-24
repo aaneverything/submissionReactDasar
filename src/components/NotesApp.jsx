@@ -30,6 +30,7 @@ class NotesApp extends React.Component {
           ...prevState.notes,
           {
             id: +new Date(),
+            archived: false, 
             title,
             body,
             createdAt: new Date().toISOString()
